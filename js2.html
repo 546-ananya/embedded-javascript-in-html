@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <title>Embedding JavaScript in HTML pages.</title>
+</head>
+<style>
+    body{
+        background-color: #e8dfd8;
+        font-family: 'Fredoka One', cursive;
+    }
+    .container{
+        font-size: 26px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #0bbd3a;
+        box-shadow: 0px 0px 20px 16px rgb(76, 0, 255);
+            width: 650px;
+            height: 400px;
+            border-radius: 20px;
+            margin: 100px auto;
+            padding: 50px;
+}
+.button {
+        border: none;
+        font-weight: bold;
+  border-radius: 28px;
+  font-family: 'Fredoka One', cursive;
+  color: #bf97ff;
+  font-size: 20px;
+  background: #ff2d81;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  box-shadow: 0px 0px 6px 4px #0adaff;
+  margin: 20px;
+}
+
+.button:hover {
+  background-color: #cef715;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<body>
+    <div class="container">
+        <h3>Embedding JavaScript in HTML pages.</h3>
+            <button class="button" onclick="alertmessage()">Click here!</button>
+            <p>The above button uses event handler and shows an alert pop-up box every time i click on it.</p>
+    </div>
+    <script>
+      function alertmessage() {
+        alert('This is alert pop-up box!');
+      }
+      </script>
+</body>
+</html>
